@@ -252,6 +252,6 @@ document.addEventListener("keydown", event => {
 document.querySelectorAll('a[href="#"]').forEach(link => {
     link.addEventListener("click", event => {
         event.preventDefault();
-        alert("Add your real project or dashboard link here.");
+        alert(":)");
     });
 });
