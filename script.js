@@ -194,6 +194,23 @@ const projectData = {
         description:
             "A structured analytics project using DBT Cloud and Snowflake. It includes staging models, analytical marts, schema tests and SQL transformations designed to create reliable data models.",
         tech: ["DBT Cloud", "Snowflake", "SQL", "YAML"]
+    },
+
+    citibike: {
+        type: "DATA ENGINEERING & ANALYTICS",
+        title: "CitiBike Rebalancing Command Center",
+        description:
+            "An end-to-end bike-share analytics project built using Microsoft Fabric to analyze NYC Citi Bike operations. The project integrates trip records, station status, weather data and operational feedback to help identify station imbalances and support data-driven rebalancing decisions. It uses a Bronze–Silver–Gold architecture, incremental data processing, dimensional modeling and a Direct Lake semantic model.",
+        tech: [
+            "Microsoft Fabric",
+            "PySpark",
+            "SQL",
+            "Power BI",
+            "PostgreSQL",
+            "REST APIs",
+            "Git & GitHub",
+            "Delta Lake"
+        ]
     }
 };
 
