@@ -34,68 +34,284 @@
 
 
     <!-- Hero -->
-    <main>
+    
+<main>
 
-        <section class="hero" id="home">
-            <div class="hero-glow glow-one"></div>
-            <div class="hero-glow glow-two"></div>
+            <!-- Hero Section -->
+        <section class="hero de-hero" id="home">
 
-            <div class="hero-content reveal">
+            <div class="de-hero-glow"></div>
 
-                <div class="profile-wrapper">
-                   <!-- <img
-                            src="./images/WhatsApp Image 2026-11-25 at 10.42.13 PM.jpeg"
-                            class="profile-img"
-                            alt="Naushin Sayyed"
-                        >
-                     -->
-                    <!--
-                        <span class="status-dot" title="Open to opportunities"></span>
-                    -->
-                </div>
-                    <p> Hi, I'm <span>Naushin Sayyed</span> </p>
+            <div class="de-hero-container">
+
+                <!-- LEFT: INTRODUCTION -->
+                <div class="de-intro reveal">
+
+                    <div class="de-availability">
+                        <span class="availability-dot"></span>
+                        OPEN TO OPPORTUNITIES
+                    </div>
+
+                    <p class="de-greeting">Hi, I'm</p>
+
+                    <h1>
+                        Naushin <span>Sayyed.</span>
+                    </h1>
+
                     <p class="typing-line">
-                        <span id="typingText"></span><span class="cursor">|</span>
+                        <span id="typingText"></span>
+                        <span class="cursor">|</span>
                     </p>
 
-                <p class="hero-description">
-                     I build data pipelines, transform data into meaningful insights,
-                    and create analytics-ready solutions using modern data tools.
-                </p>
+                    <p class="de-description">
+                        I build data pipelines, work with modern data platforms,
+                        and transform raw data into reliable, analytics-ready
+                        solutions.
+                    </p>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">
-                        View My Projects
-                    </a>
+                    <div class="de-buttons">
 
-                    <a
-                        href="./Resume/NSAYYED.pdf"
+                        <a href="#projects" class="btn primary-btn">
+                            Explore My Projects ↗
+                        </a>
+
+                        <a href="./Resume/NSAYYED.pdf"
                         class="btn secondary-btn"
+                        target="_blank">
+                            View Resume
+                        </a>
+
+                    </div>
+
+                    <div class="de-social-links">
+
+                        <a href="https://github.com/nssayyad01"
                         target="_blank"
-                    >
-                        View CV
-                    </a>
+                        rel="noopener">
+                            GitHub ↗
+                        </a>
+
+                        <span>•</span>
+
+                        <a href="https://www.linkedin.com/in/naushin-sayyed-253109291"
+                        target="_blank"
+                        rel="noopener">
+                            LinkedIn ↗
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div class="quick-links">
-                    <a href="https://github.com/nssayyad01" target="_blank" rel="noopener">
-                        GitHub ↗
-                    </a>
-                    <span>•</span>
-                    <a href="https://www.linkedin.com/in/naushin-sayyed-253109291" target="_blank" rel="noopener">
-                        LinkedIn ↗
-                    </a>
+
+                <!-- RIGHT: DATA ENGINEERING DASHBOARD -->
+                <div class="pipeline-dashboard reveal">
+
+                    <!-- Dashboard Header -->
+                    <div class="dashboard-header">
+
+                        <div>
+                            <span class="dashboard-label">FEATURED PROJECT</span>
+                            <h3>Citi Bike Analytics</h3>
+                        </div>
+
+                        <div class="dashboard-status">
+                            <span></span>
+                            ARCHITECTURE
+                        </div>
+
+                    </div>
+
+
+                    <!-- Pipeline Architecture -->
+                    <div class="pipeline-area">
+
+                        <!-- Source Layer -->
+                        <div class="pipeline-stage">
+
+                            <div class="stage-heading">
+                                <span class="stage-number">01</span>
+                                <span>SOURCE SYSTEMS</span>
+                            </div>
+
+                            <div class="pipeline-nodes">
+
+                                <div class="pipeline-node source-node">
+                                    <span class="node-icon">◈</span>
+                                    <div>
+                                        <strong>Neon PostgreSQL</strong>
+                                        <small>Operational Database</small>
+                                    </div>
+                                </div>
+
+                                <div class="pipeline-node source-node">
+                                    <span class="node-icon">⇄</span>
+                                    <div>
+                                        <strong>REST APIs</strong>
+                                        <small>GBFS • Open-Meteo</small>
+                                    </div>
+                                </div>
+
+                                <div class="pipeline-node source-node">
+                                    <span class="node-icon">▤</span>
+                                    <div>
+                                        <strong>Historical Data</strong>
+                                        <small>CSV • JSON</small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="pipeline-connector">
+                            <span></span>
+                            <small>DATA INGESTION</small>
+                        </div>
+
+
+                        <!-- Ingestion -->
+                        <div class="pipeline-stage">
+
+                            <div class="stage-heading">
+                                <span class="stage-number">02</span>
+                                <span>INGESTION & ORCHESTRATION</span>
+                            </div>
+
+                            <div class="pipeline-node fabric-node">
+
+                                <span class="node-icon">⟳</span>
+
+                                <div>
+                                    <strong>Microsoft Fabric</strong>
+                                    <small>Data Pipelines • Copy Activity</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="pipeline-connector">
+                            <span></span>
+                            <small>RAW DATA</small>
+                        </div>
+
+
+                        <!-- Lakehouse -->
+                        <div class="pipeline-stage">
+
+                            <div class="stage-heading">
+                                <span class="stage-number">03</span>
+                                <span>LAKEHOUSE ARCHITECTURE</span>
+                            </div>
+
+                            <div class="lakehouse-grid">
+
+                                <div class="lakehouse-card bronze">
+                                    <span class="layer-symbol">01</span>
+                                    <strong>BRONZE</strong>
+                                    <small>Raw Data</small>
+                                </div>
+
+                                <div class="lakehouse-card silver">
+                                    <span class="layer-symbol">02</span>
+                                    <strong>SILVER</strong>
+                                    <small>Cleaned Data</small>
+                                </div>
+
+                                <div class="lakehouse-card gold">
+                                    <span class="layer-symbol">03</span>
+                                    <strong>GOLD</strong>
+                                    <small>Analytics Ready</small>
+                                </div>
+
+                            </div>
+
+                            <div class="transformation-note">
+                                <span>⚙</span>
+                                PySpark Transformations • Data Quality • Data Modelling
+                            </div>
+
+                        </div>
+
+
+                        <div class="pipeline-connector">
+                            <span></span>
+                            <small>ANALYTICS LAYER</small>
+                        </div>
+
+
+                        <!-- Output -->
+                        <div class="pipeline-stage">
+
+                            <div class="stage-heading">
+                                <span class="stage-number">04</span>
+                                <span>CONSUMPTION</span>
+                            </div>
+
+                            <div class="output-grid">
+
+                                <div class="output-card">
+                                    <span>▦</span>
+                                    <div>
+                                        <strong>Gold Warehouse</strong>
+                                        <small>Star Schema</small>
+                                    </div>
+                                </div>
+
+                                <div class="output-card">
+                                    <span>◩</span>
+                                    <div>
+                                        <strong>Power BI</strong>
+                                        <small>Direct Lake • Insights</small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Technology Stack -->
+                    <div class="dashboard-footer">
+
+                        <span class="stack-heading">TECH STACK</span>
+
+                        <div class="stack-tags">
+                            <span>Microsoft Fabric</span>
+                            <span>PySpark</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-bottom">
+                        <span>CITI BIKE REBALANCING COMMAND CENTER</span>
+                        <span>END-TO-END DATA ENGINEERING</span>
+                    </div>
+
                 </div>
 
             </div>
+
 
             <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
                 <span></span>
                 Scroll to explore
             </a>
+
         </section>
 
+        </section>
 
+        
         <!-- About -->
         <section class="section about" id="about">
             <div class="section-heading reveal">
@@ -110,12 +326,12 @@
 
                     <p>
                         I am a Computer Science graduate with a strong interest
-                        in Data Analytics, Data Engineering, and Cloud Platforms.
+                        in Data Engineering, Data Analytics and Cloud Platforms.
                     </p>
 
                     <p>
                         I enjoy working with SQL, Python, Excel, Power BI,
-                        Snowflake, dbt and other data tools to understand patterns,
+                        Snowflake, dbt, Microsoft fabric and other data tools to understand patterns,
                         transform raw information, and communicate insights
                         clearly.
                     </p>

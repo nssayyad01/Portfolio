@@ -15,10 +15,9 @@ const typingText = document.getElementById("typingText");
 // --------------------------------
 
 const typingWords = [
-    "Data Engineer • Data Analyst",
-    "SQL • Python • Power BI",
-    "Snowflake • DBT • AWS"
-   
+    "Data Engineer • Analytics Developer",
+    "SQL • Python • PySpark",
+    "Microsoft Fabric • Power BI"
 ];
 
 let wordIndex = 0;
